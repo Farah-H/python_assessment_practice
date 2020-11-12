@@ -23,3 +23,8 @@ print(type(shopping_list))
 
 # print the price of the third item 
 print(shopping_list['veg'])
+
+# replace the price of the third item 
+
+shopping_list['veg'] = 10.99
+print(shopping_list)
