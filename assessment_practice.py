@@ -28,3 +28,28 @@ print(shopping_list['veg'])
 
 shopping_list['veg'] = 10.99
 print(shopping_list)
+
+# write a funciton which adds two arguments
+def add(a,b):
+    return a + b
+
+# create a class called person with name and age
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+person_instance = Person('Farah',22)
+print(person_instance.age)
+print(person_instance.name)
+
+# create a class called Student and inherit everything from the parent class (Person)
+class Student(Person):
+    def __init__(self,name,age,student_id, course):
+        super().__init__(self)
+        self.student_id = student_id
+        self.course = course
+    
+student_instance = Student('Farah', 22, 1234, 'DevOps')
+print(student_instance.name, student_instance.age, student_instance.student_id, student_instance.course)
